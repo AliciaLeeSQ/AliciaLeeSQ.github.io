@@ -295,7 +295,7 @@ h3 {font-family: subheader;
 /*video section*/
 
 /*removal of 2st parallex image + animation delay*/
-main section.right section#video div.chemistmobile.reveal {display: block;}
+main section.right div#video div.chemistmobile.reveal {display: block;}
 
 .chemist {display: none;}
 

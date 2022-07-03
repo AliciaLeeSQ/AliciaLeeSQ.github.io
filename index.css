@@ -32,7 +32,9 @@ text-align:center;
   flex-direction: row;
   background-color: white;  
 }
-.home{text-decoration: underline;}
+#home{
+  text-decoration: underline;
+}
 
 #heading p{
   flex:7;

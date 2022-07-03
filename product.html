@@ -1,0 +1,704 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Product</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="product.css">
+        <link rel="stylesheet" href="general.css">
+        <link rel="icon" href="images/he_logo_R3R_1.ico" type="image/x-icon"> 
+       
+
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Nunito&family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;0,800;1,400;1,500;1,600&family=Roboto&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <nav>
+            <div class="wrapper">
+              <!--logo-->
+              <div class="logo"><a href="index.html"><img src="images/HElogo.png" alt="logo image"></a></div>
+             
+              <input type="radio" name="slider" id="menu-btn">
+              <input type="radio" name="slider" id="close-btn">
+  
+              <ul class="nav-links">
+                <li><label for="close-btn" class="btn close-btn"><i class="fas fa-times"></i></label></li>
+  
+                <!--home-->
+                <li><a href="index.html" >Home</a></li>
+                <!--product-->
+                <li class="product">
+                  <a href="product.html" class="desktop-item">Product</a>
+  
+                  <input type="checkbox" id="showMega">
+  
+                  <label for="showMega" class="mobile-item"><a href="product.html" id="productButton">Product</a></label>
+  
+                  <div class="mega-box">
+                    
+                    <div class="content">
+  
+                      <div class="row">
+                        <header>Collection</header>
+                        <ul class="mega-links">
+                          <li><a href="#">Aloeeee</a></li>
+                          <li><a href="#">Argan Oil</a></li>
+                          <li><a href="#">Coconut Milk</a></li>
+                          <li><a href="#">Honey & Vitamin B</a></li>
+                        </ul>
+                      </div>
+  
+                      <div class="row">
+                        <header>Hair Type</header>
+                        <ul class="mega-links">
+                          <li><a href="#">Dry, Damaged Hair</a></li>
+                          <li><a href="#">Fine, Flat Hair</a></li>
+                          <li><a href="#">Colored Hair</a></li>
+                          <li><a href="#">Curly Hair</a></li>
+                        </ul>
+                      </div>
+  
+                      <div class="row">
+                        <header>Hair Needs</header>
+                        <ul class="mega-links">
+                          <li class="product"><a href="product.html">Repair</a></li>
+                          <li><a href="#">Volume</a></li>
+                          <li><a href="#">Moisturize</a></li>
+                          <li><a href="#">Smooth</a></li>
+                        </ul>
+                      </div>
+  
+                      <div class="row">
+                        <header>Product Type</header>
+                        <ul class="mega-links">
+                          <li><a href="#">Shampoo</a></li>
+                          <li><a href="#">Hair Oil</a></li>
+                          <li><a href="#">Conditioner</a></li>
+                          <li><a href="#">Dry Shampoo</a></li>
+                        </ul>
+                      </div>
+                      
+                      <div class="row">
+                        <img src="images/megapic.png" alt="">
+                      </div>
+                    </div>
+                  </div>
+                </li>
+  
+                 <!--About-->
+                <li><a href="aboutUs.html">About</a></li>
+                <!--Contact-->
+                <li><a href="contact.html">Contact</a></li>
+              </ul>
+  
+              <label for="menu-btn" class="btn menu-btn"><i class="fas fa-bars"></i></label>
+            </div>
+          </nav>
+        <main>
+            
+            <img class="leaf3" src="images/leaf4.png" alt="leaf">
+            
+            <div class="intro">
+                <h1>Hair Repair Products</h1>
+                <img src="images/repair/repair.jfif" alt="hair repair product">
+                <h2>Say goodbye to hair breakage and hello to silky waves</h2>
+                <p>Ready to press the reset button on damaged hair? Herbal Essences hair repair 
+                    shampoos and conditioners are here to perform the necessary damage control
+                     with its natural ingredients and delicious scents.</p>
+                <p>Our hair repair shampoos and conditioners hydrate damaged hair, making them silky
+                     smooth and well nourished. Get an extra boost of shine with real botanicals
+                      infused into hair care products.</p>
+                <p>Indulge in an exclusive hair care experience and say goodbye to breakage.</p>
+                
+                </div>
+            <img class="leaf4" src="images/leaf4.png" alt="leaf">
+           
+
+            <!-- cart modal -->
+            <div class="cshow">
+                <div class="cm">
+                  <i id="closeb" class="fas fa-times"></i>
+                    <div class="prs">
+                        <h1>Your Shopping Cart</h1>
+                    </div>
+                    <div class="total">
+                      <h1 class="thetotal">TOTAL</h1>
+                        <span class="totalcost">RM 0</span>
+                        <button class="buyb" onclick="document.location='tq.html'">CHECKOUT</button>
+                    </div>
+                  </div>
+            </div>
+            <!-- end of cart modal -->
+
+
+
+            <!-- shopping bag -->
+            <div class="cpress">
+                <img id="cart" src="images/shoppingbagicon.png" alt="add to cart icon">
+                <span class ="amount">0</span>
+            </div>
+            <!-- end of shopping bag -->
+
+
+            <!-- products -->
+            <div class="box">
+            <div id="products">
+                <div>
+                    <img onclick="openpop()" class="product-image" src="images/repair/pic1.png" alt="Argan Oil Shampoo">
+                    <h3>Argan Oil Shampoo</h3>
+                    <h4 class="itemcost">RM 44.33</h4>
+                    <img src="images/starReview.png" alt="Star review for Argan Oil Shampoo">
+                    <button class="atc">Add to cart</button>
+                </div>
+                <div>
+                    <img onclick="openpop2()" class="product-image" src="images/repair/pic2.png" alt="Argan Oil Conditioner">
+                    <h3>Argan Oil Conditioner</h3>
+                    <h4 class="itemcost">RM 44.33</h4>
+                    <img src="images/starReview.png" alt="Star review for Argan Oil Conditioner">
+                    <button class="atc">Add to cart</button>
+                </div>
+                <div>
+                    <img onclick="openpop3()" class="product-image" src="images/repair/pic3.png" alt="Repairing Hair Mask with Argan Oil & Aloe">
+                    <h3>Repairing Hair Mask with <br> Argan Oil & Aloe</h3>
+                    <h4 class="itemcost">RM 30.40</h4>
+                    <img src="images/starReview.png" alt="Star review for Repairing Hair Mask with Argan Oil & Aloe">
+                    <button class="atc">Add to cart</button>
+                </div>
+                <div>
+                    <img onclick="openpop4()" class="product-image" src="images/repair/pic4.png" alt="Argan Oil & Aloe Hair Oil Mist">
+                    <h3>Argan Oil & Aloe <br>Hair Oil Mist</h3>
+                    <h4 class="itemcost">RM 31.15</h4>
+                    <img src="images/starReview.png" alt="Star review for Argan Oil & Aloe Hair Oil Mist">
+                    <button class="atc">Add to cart</button>
+                </div>
+                <div>
+                    <img onclick="openpop5()" class="product-image" src="images/repair/pic5.png" alt="Argan Oil & Aloe Sulfate Free Detangling Cream">
+                    <h3>Argan Oil & Aloe Sulfate <br>Free Detangling Cream</h3>
+                    <h4 class="itemcost">RM 30.40</h4>
+                    <img src="images/starReview.png" alt="Star review for Argan Oil & Aloe Sulfate Free Detangling Cream">
+                    <button class="atc">Add to cart</button>
+                </div>
+                <div>
+                    <img onclick="openpop6()" class="product-image" src="images/repair/pic6.png" alt="Argan Oil & Aloe Sulfate-Free Heat Protect Spray">
+                    <h3>Argan Oil & Aloe Sulfate-Free <br>Heat Protect Spray</h3>
+                    <h4 class="itemcost">RM 32.55</h4>
+                    <img src="images/starReview.png" alt="Star review for Argan Oil & Aloe Sulfate-Free Heat Protect Spray">
+                    <button class="atc">Add to cart</button>
+                </div>
+                <div>
+                    <img onclick="openpop7()" class="product-image" src="images/repair/pic7.png" alt="Avocado & Argan Oil Sulfate Free Shampoo">
+                    <h3>Avocado & Argan Oil <br>Sulfate Free Shampoo</h3>
+                    <h4 class="itemcost">RM 35.55</h4>
+                    <img src="images/starReview.png" alt="Star review for Avocado & Argan Oil Sulfate Free Shampoo">
+                    <button class="atc">Add to cart</button>
+                </div>
+                <div>
+                    <img onclick="openpop8()" class="product-image" src="images/repair/pic8.png" alt="Avocado & Argan Oil Sulfate Free Conditioner">
+                    <h3>Avocado & Argan Oil <br>Sulfate Free Conditioner</h3>
+                    <h4 class="itemcost">RM 35.55</h4>
+                    <img src="images/starReview.png" alt="Star review for Avocado & Argan Oil Sulfate Free Conditioner">
+                    <button class="atc">Add to cart</button>
+                </div>
+                <div>
+                    <img onclick="openpop9()" class="product-image" src="images/repair/pic9.png" alt="Moroccan My Shine Shampoo">
+                    <h3>Moroccan My <br> Shine Shampoo</h3>
+                    <h4 class="itemcost">RM 19.90</h4>
+                    <img src="images/starReview.png" alt="Star review for Moroccan My Shine Shampoo">
+                    <button class="atc">Add to cart</button>
+                </div>
+                <div>
+                    <img onclick="openpop10()" class="product-image" src="images/repair/pic10.png" alt="Moroccan My Shine Conditioner">
+                    <h3>Moroccan My <br> Shine Conditioner</h3>
+                    <h4 class="itemcost">RM 19.90</h4>
+                    <img src="images/starReview.png" alt="Star review for Moroccan My Shine Conditioner">
+                    <button class="atc">Add to cart</button>
+                </div>
+                <div>
+                    <img onclick="openpop11()" class="product-image" src="images/repair/pic11.png" alt="Hello Hydration Shampoo">
+                    <h3>Hello Hydration <br> Shampoo </h3>
+                    <h4 class="itemcost">RM 19.90</h4>
+                    <img src="images/starReview.png" alt="Star review for Hello Hydration Shampoo">
+                    <button class="atc">Add to cart</button>
+                </div>
+                <div>
+                    <img onclick="openpop12()" class="product-image" src="images/repair/pic12.png" alt="Hello Hydration Conditioner">
+                    <h3>Hello Hydration <br> Conditioner</h3>
+                    <h4 class="itemcost">RM 19.90</h4>
+                    <img src="images/starReview.png" alt="Star review for Hello Hydration Conditioner">
+                    <button class="atc">Add to cart</button>
+                </div>
+            </div>
+            </div>
+            <!-- end of products -->
+
+
+
+            <!-- Modal popup content -->
+           <div id="popup" class="pop">
+                <div class="info">
+                    <span class="close" onclick="closepop()">&times;</span>
+                    <h1>Argan Oil Shampoo</h1>
+                    <h3>Repair & Smooth Hair</h3>
+                    <p>Our pH-balanced Argan Oil Shampoo is color-safe and crafted to smooth and repair for beautiful hair</p>
+                    <h3>Real Botanicals</h3>
+                    <p>Certified by the Royal Botanic Gardens, Kew—a world-leading expert celebrating 260 years of plant science</p>
+                    <h3>The Scent Experience</h3>
+                    <p>Multilayered scents of fizzy citrus, exotic spices, and creamy vanilla</p>
+                    <h3>Mindfully Created</h3>
+                    <p>SLES-free, paraben-free, colorant-free, certified PETA cruelty-free, and packed in recycled plastic</p>
+                    <h3>Dermatologist-Tested</h3>
+                    <p>Gentle enough for daily use, this shampoo has been tested by dermatologists</p>
+                    <h3>Feel What's Real</h3>
+                    <p>When the ingredients are real, you feel it</p>
+                </div>
+            </div> 
+
+            <div id="popup2" class="pop">
+                <div class="info">
+                    <span class="close" onclick="closepop2()">&times;</span>
+                    <h1>Argan Oil Conditioner</h1>
+                    <h3>Repair & Smooth Hair</h3>
+                    <p>Our Argan Oil Conditioner is pH-balanced and crafted to smooth and repair for beautiful hair while keeping your color safe</p>
+                    <h3>Real Botanicals</h3>
+                    <p>Certified by the Royal Botanic Gardens, Kew—a world-leading expert celebrating 260 years of plant science</p>
+                    <h3>The Scent Experience</h3>
+                    <p>Multilayered scents of fizzy citrus, exotic spices, and creamy vanilla</p>
+                    <h3>Mindfully Created</h3>
+                    <p>Paraben-free, colorant-free, certified cruelty-free by PETA, and packed in recycled plastic</p>
+                    <h3>Dermatologist-Tested</h3>
+                    <p>Gentle enough for daily use, this conditioner has been tested by dermatologists</p>
+                    <h3>Feel What's Real</h3>
+                    <p>When the ingredients are real, you feel it</p>
+                </div>
+            </div> 
+
+            <div id="popup3" class="pop">
+                <div class="info">
+                    <span class="close" onclick="closepop3()">&times;</span>
+                    <h1>Repairing Hair Mask with Argan Oil & Aloe</h1>
+                    <h3>Repair & Restore</h3>
+                    <p>Hydrating hair mask for dry damaged hair with Argan Oil & Aloe helps restore, repair, and smooth frizzy hair—plus it's pH-balanced and color safe</p>
+                    <h3>Real Botanicals</h3>
+                    <p>Certified by the Royal Botanic Gardens, Kew—a world-leading expert celebrating 260 years of plant science</p>
+                    <h3>The Scent Experience</h3>
+                    <p>Multilayered scents of juicy orange, white florals, and coconut water</p>
+                    <h3>Mindfully Created</h3>
+                    <p>Sulfate-free, paraben-free, mineral oil-free, colorant-free, certified cruelty-free by PETA, and packaged in recycled plastic</p>
+                    <h3>Dermatologist-Tested</h3>
+                    <p>Gentle enough for daily use, this hair mask has been tested by dermatologists</p>
+                    <h3>Feel What's Real</h3>
+                    <p>When the ingredients are real, you feel it</p>
+                </div>
+            </div> 
+
+            <div id="popup4" class="pop">
+                <div class="info">
+                    <span class="close" onclick="closepop4()">&times;</span>
+                    <h1>Argan Oil & Aloe Hair Oil Mist</h1>
+                    <h3>Repair Your Hair</h3>
+                    <p>Hydrating hair oil mist, smooths, detangles, and helps fight frizz with light moisture</p>
+                    <h3>Real Botanicals</h3>
+                    <p>Certified by the Royal Botanic Gardens, Kew—a world-leading expert celebrating 260 years of plant science</p>
+                    <h3>The Scent Experience</h3>
+                    <p>A gentle, multilayered scent that won't overpower</p>
+                    <h3>Mindfully Created</h3>
+                    <p>Sulfate-free, paraben-free, mineral oil-free, colorant-free, certified cruelt- free by PETA, and packaged in recycled plastic</p>
+                    <h3>Dermatologist-Tested</h3>
+                    <p>Gentle enough for daily use, this hair oil mist has been tested by dermatologists</p>
+                    <h3>Feel What's Real</h3>
+                    <p>When the ingredients are real, you feel it</p>
+                </div>
+            </div> 
+
+            <div id="popup5" class="pop">
+                <div class="info">
+                    <span class="close" onclick="closepop5()">&times;</span>
+                    <h1>Argan Oil & Aloe Sulfate Free Detangling Cream</h1>
+                    <h3>Detangle & Smooth</h3>
+                    <p>Herbal Essences Detangling Cream helps you detangle and smooth your natural strands for silky and beautiful-looking hair</p>
+                    <h3>Be Free & Clear</h3>
+                    <p>Made without sulfates, parabens, or mineral oil so your hair can be nurtured only by nature</p>
+                    <h3>Real, Legit Ingredients</h3>
+                    <p>Infused with real botanicals, including argan oil and aloe, and certified by the Royal Botanic Gardens, Kew</p>
+                    <h3>Scent Experience</h3>
+                    <p>Experience the smell of green, lemony freshness with notes of flowers, fruits, and a cedary finish</p>
+                    <h3>Feel What's Real</h3>
+                    <p>When the ingredients are real, you feel it</p>
+                </div>
+            </div> 
+
+            <div id="popup6" class="pop">
+                <div class="info">
+                    <span class="close" onclick="closepop6()">&times;</span>
+                    <h1>Argan Oil & Aloe Sulfate-Free Heat Protect Spray</h1>
+                    <h3>Protect Hair from Heat</h3>
+                    <p>Herbal Essences Heat Protect Spray is pH-balanced and color-safe for protection from damage up to 450°F</p>
+                    <h3>Be Free & Clear</h3>
+                    <p>Made without sulfates, parabens, or mineral oil so your hair can be nurtured only by nature</p>
+                    <h3>Real, Legit Ingredients</h3>
+                    <p>Infused with real botanicals, including avocado and argan oil, and certified by the Royal Botanic Gardens, Kew</p>
+                    <h3>Scent Experience</h3>
+                    <p>Experience the smell of green, lemony freshness with notes of flowers, fruits, and a cedary finish</p>
+                    <h3>Feel What's Real</h3>
+                    <p>When the ingredients are real, you feel it</p>
+                </div>
+            </div> 
+
+            <div id="popup7" class="pop">
+                <div class="info">
+                    <span class="close" onclick="closepop7()">&times;</span>
+                    <h1>Avocado & Argan Oil Sulfate Free Shampoo</h1>
+                    <h3>Repair & Protect</h3>
+                    <p>This rich formula strengthens each strand, leaving your hair shiny and smooth, so give yourself a freeing experience and enjoy the feeling of real results with real ingredients, brought to you by nature</p>
+                    <h3>Be Free & Clear</h3>
+                    <p>Made without sulfates, parabens, or dyes so your hair can be nurtured only by nature</p>
+                    <h3>Dermatologist-Tested</h3>
+                    <p>Gentle enough for daily use, this shampoo is also certified PETA cruelty-free and is packed in recycled plastic</p>
+                    <h3>Real, Legit Ingredients</h3>
+                    <p>Infused with real botanicals, including avocado and argan oil, and certified by the Royal Botanic Gardens, Kew</p>
+                    <h3>Scent Experience</h3>
+                    <p>Experience the smell of green, lemony freshness with notes of flowers, fruits, and a cedary finish</p>
+                    <h3>Feel What's Real</h3>
+                    <p>When the ingredients are real, you feel it</p>
+                </div>
+            </div> 
+
+            <div id="popup8" class="pop">
+                <div class="info">
+                    <span class="close" onclick="closepop8()">&times;</span>
+                    <h1>Avocado & Argan Oil Sulfate Free Conditioner</h1>
+                    <h3>Repair & Protect</h3>
+                    <p>This rich formula strengthens each strand, leaving your hair shiny and smooth, so give yourself a freeing experience and enjoy the feeling of real results with real ingredients, brought to you by nature</p>
+                    <h3>Be Free & Clear</h3>
+                    <p>Made without sulfates, parabens, or dyes so your hair can be nurtured only by nature</p>
+                    <h3>Dermatologist-Tested</h3>
+                    <p>Gentle enough for daily use, this conditioner is also certified PETA cruelty-free and is packed in recycled plastic</p>
+                    <h3>Real, Legit Ingredients</h3>
+                    <p>Infused with real botanicals, including avocado and argan oil, and certified by the Royal Botanic Gardens, Kew</p>
+                    <h3>Scent Experience</h3>
+                    <p>Experience the smell of green, lemony freshness with notes of flowers, fruits, and a cedary finish</p>
+                    <h3>Feel What's Real</h3>
+                    <p>When the ingredients are real, you feel it</p>
+                </div>
+            </div> 
+
+            <div id="popup9" class="pop">
+                <div class="info">
+                    <span class="close" onclick="closepop9()">&times;</span>
+                    <h1>Moroccan My Shine Shampoo</h1>
+                    <h3>Nourishment</h3>
+                    <p>Herbal Essences Moroccan My Shine Shampoo channelises the power of argan oil to nourish your hair and restore its shine and softness.</p>
+                    <h3>Deep Nourishment</h3>
+                    <p>Our Moroccan oil hydrating shampoo deeply nourishes dull and damaged hair.</p>
+                    <h3>Scent Experience</h3>
+                    <p>Treat your tresses to the exotic fragrance of argan oil with Herbal Essences Argan Oil shampoo.</p>
+                    <h3>Cruelty-Free</h3>
+                    <p>Herbal Essences is proud to be recognised by PETA, as a cruelty-free brand.</p>
+                </div>
+            </div> 
+
+            <div id="popup10" class="pop">
+                <div class="info">
+                    <span class="close" onclick="closepop10()">&times;</span>
+                    <h1>Moroccan My Shine Conditioner</h1>
+                    <h3>Soft and Smooth</h3>
+                    <p>Restore the natural shine and velvety softness of your hair with Herbal Essences Moroccan My Shine nourishing conditioner.</p>
+                    <h3>Deep Nourishment</h3>
+                    <p>Our Moroccan oil hydrating conditioner deeply nourishes dull and damaged hair.</p>
+                    <h3>Scent Experience</h3>
+                    <p>Uplift your senses with the earthy fragrance of argan oil in our Moroccan oil conditioner.</p>
+                    <h3>Nature-Inspired</h3>
+                    <p>Crafted to mirror nature's beauty, Herbal Essences Moroccan oil products, are infused with warm earthy aromatic notes.</p>
+                    <h3>Cruelty-Free</h3>
+                    <p>Herbal Essences is proud to be recognised by PETA, as a cruelty-free brand.</p>
+                </div>
+            </div> 
+
+            <div id="popup11" class="pop">
+                <div class="info">
+                    <span class="close" onclick="closepop11()">&times;</span>
+                    <h1>Hello Hydration Shampoo</h1>
+                    <h3>Transforms Dry Hair</h3>
+                    <p>Bid adieu to dull, dry, lifeless hair by diving into an oasis of thirst-quenching hydration.</p>
+                    <h3>Intense Moisturisation</h3>
+                    <p>Restore hair moisture with Herbal Essences Hello Hydration moisture shampoo for dry hair.</p>
+                    <h3>Scent Experience</h3>
+                    <p>Crafted with the goodness of creamy coconut essences, this hydrating shampoo will rejuvenate your hair.</p>
+                    <h3>Nature-Inspired</h3>
+                    <p>Experience this hydration bomb, that is inspired by nature and infused with refreshing fragrances.</p>
+                    <h3>Cruelty-Free</h3>
+                    <p>Herbal Essences is proud to be recognised by PETA, as a cruelty-free brand.</p>
+                </div>
+            </div> 
+
+            <div id="popup12" class="pop">
+                <div class="info">
+                    <span class="close" onclick="closepop12()">&times;</span>
+                    <h1>Hello Hydration Conditioner</h1>
+                    <h3>Deep Hydration</h3>
+                    <p>Dive deep into a pool of thirst-quenching hydration with this dry hair conditioner.</p>
+                    <h3>Repairs and Restores</h3>
+                    <p>Regain hair moisture with Herbal Essences Hello Hydration moisturising conditioner for dry and damaged hair.</p>
+                    <h3>Scent Experience</h3>
+                    <p>This hydrating conditioner for dry hair replete with creamy coconut essences will moisturise bring your hair to life.</p>
+                    <h3>Nature-Inspired</h3>
+                    <p>Inspired by nature's bounty and infused with freshing fragrances, our deep conditioner works wonders.</p>
+                    <h3>Cruelty-Free</h3>
+                    <p>Herbal Essences is proud to be recognised by PETA, as a cruelty-free brand.</p>
+                </div>
+            </div> 
+            <!-- End of modal popup content -->
+        </main>
+
+
+        <footer>
+            <p id="copyright">Copyright &copy; Procter & Gamble</p>
+            <a href="https://termsandconditions.pg.com/en-us/" id="tNc"><p >Terms and Condition</p></a>
+            <div id="socialMedia">
+                <p id="sm">Social Media</p>
+                <div id="icons">
+                    <a href="https://www.instagram.com/herbalessences/"><img src="images/instaicon.png" alt="intstagram icon"></a>
+                    <a href="https://twitter.com/herbalessences"><img src="images/twittericon.png" alt="twitter icon"></a>
+                    <a href="https://www.facebook.com/herbalessences"><img src="images/fbicon.png" alt="facebook icon"></a>  
+                </div>   
+            </div> 
+        </footer>
+
+
+        
+        <script>
+            function openpop() {
+                document.getElementById("popup").style.display = "block";
+                }
+
+            function closepop() {
+                document.getElementById("popup").style.display = "none";
+                }
+
+            function openpop2() {
+                document.getElementById("popup2").style.display = "block";
+                }
+
+            function closepop2() {
+                document.getElementById("popup2").style.display = "none";
+                }
+
+            function openpop3() {
+                document.getElementById("popup3").style.display = "block";
+                }
+
+            function closepop3() {
+                document.getElementById("popup3").style.display = "none";
+                }
+
+            function openpop4() {
+                document.getElementById("popup4").style.display = "block";
+                }
+
+            function closepop4() {
+                document.getElementById("popup4").style.display = "none";
+                }
+
+            function openpop5() {
+                document.getElementById("popup5").style.display = "block";
+                }
+
+            function closepop5() {
+                document.getElementById("popup5").style.display = "none";
+                }
+
+            function openpop6() {
+                document.getElementById("popup6").style.display = "block";
+                }
+
+            function closepop6() {
+                document.getElementById("popup6").style.display = "none";
+                }
+
+            function openpop7() {
+                document.getElementById("popup7").style.display = "block";
+                }
+
+            function closepop7() {
+                document.getElementById("popup7").style.display = "none";
+                }
+
+            function openpop8() {
+                document.getElementById("popup8").style.display = "block";
+                }
+
+            function closepop8() {
+                document.getElementById("popup8").style.display = "none";
+                }
+
+            function openpop9() {
+                document.getElementById("popup9").style.display = "block";
+            }
+
+            function closepop9() {
+                document.getElementById("popup9").style.display = "none";
+                }
+
+            function openpop10() {
+                document.getElementById("popup10").style.display = "block";
+            }
+
+            function closepop10() {
+                document.getElementById("popup10").style.display = "none";
+                }
+
+            function openpop11() {
+                document.getElementById("popup11").style.display = "block";
+            }
+
+            function closepop11() {
+                document.getElementById("popup11").style.display = "none";
+                }
+
+            function openpop12() {
+                document.getElementById("popup12").style.display = "block";
+            }
+
+            function closepop12() {
+                document.getElementById("popup12").style.display = "none";
+                }
+        </script>  
+
+
+
+        <script>
+            // open cart modal
+            const cart = document.querySelector('#cart');
+            const showit = document.querySelector('.cshow');
+
+            cart.addEventListener('click', () => {
+            if (showit.style.transform === 'translateX(-200%)'){
+                showit.style.transform = 'translateX(0)';
+            } else {
+                showit.style.transform = 'translateX(-200%)';
+            }
+            })
+            // end of open cart modal
+
+            // close cart modal
+            const closeb = document.querySelector ('#closeb');
+
+            closeb.addEventListener('click', () => {
+            showit.style.transform = 'translateX(-200%)';
+            });
+
+            showit.addEventListener('click', (e) => {
+            if (e.target.classList.contains('cshow')){
+                showit.style.transform = 'translateX(-200%)'
+            }
+            })
+            // end of close cart modal
+
+            // add products to cart
+            const atc = document.getElementsByClassName('atc');
+            const pr = document.getElementsByClassName('pr');
+
+            for (var i = 0; i < atc.length; i++) {
+            button = atc[i];
+            button.addEventListener('click', atcC)
+            }
+
+            function atcC (event) {
+            button = event.target;
+            var cproduct = button.parentElement;
+            var price = cproduct.getElementsByClassName('itemcost')[0].innerText;
+            
+            var photo = cproduct.getElementsByClassName('product-image')[0].src;
+            addItemToCart (price, photo);
+            updateCartPrice()
+            }
+
+            function addItemToCart (price, photo) {
+            var pr = document.createElement('div');
+            pr.classList.add('pr');
+            var prs = document.getElementsByClassName('prs')[0];
+            var cphoto = document.getElementsByClassName('cart-image');
+            
+            for (var i = 0; i < cphoto.length; i++){
+                if (cphoto[i].src == photo){
+                alert ('This product has already been added to the shopping cart')
+                return;
+                }
+            }
+            
+            var cri = `
+            <div class="pr">  
+                    <img class="cart-image" src="${photo}" alt="">
+                    <span class ="cart-price">${price}</span>
+                    <input class="product-quantity" type="number" value="1">
+                    <button class="remove-btn">Remove</button>
+                    </div>
+                    
+                `
+            pr.innerHTML = cri;
+            prs.append(pr);
+            pr.getElementsByClassName('remove-btn')[0].addEventListener('click', removeItem)
+            pr.getElementsByClassName('product-quantity')[0].addEventListener('change', changeQuantity)
+            updateCartPrice()
+            }
+            // end of add products to cart
+
+            // Remove products from cart
+            const deleteb = document.getElementsByClassName('remove-btn');
+            for (var i = 0; i < deleteb.length; i++) {
+            button = deleteb[i]
+            button.addEventListener('click', removeItem)
+            }
+
+            function removeItem (event) {
+            btnClicked = event.target
+            btnClicked.parentElement.parentElement.remove()
+            updateCartPrice()
+            }
+
+            // update quantity input
+            var amount = document.getElementsByClassName('product-quantity')[0];
+
+            for (var i = 0; i < amount; i++){
+            input = amount[i]
+            input.addEventListener('change', changeQuantity)
+            }
+
+            function changeQuantity(event) {
+            var input = event.target
+            if (isNaN(input.value) || input.value <= 0){
+                input.value = 1
+            }
+            updateCartPrice()
+            }
+            // end of update quantity input
+
+            // update total price
+            function updateCartPrice() {
+            var total = 0
+            for (var i = 0; i < pr.length; i += 2) {
+                cartRow = pr[i]
+            var costE = cartRow.getElementsByClassName('cart-price')[0]
+            var amountE = cartRow.getElementsByClassName('product-quantity')[0]
+            var price = parseFloat(costE.innerText.replace('RM', ''))
+            var quantity = amountE.value
+            total = total + (price * quantity )
+            total = Math.round((total + Number.EPSILON) * 100) / 100;
+                
+            }
+            document.getElementsByClassName('totalcost')[0].innerText =  'RM ' + total
+
+            document.getElementsByClassName('amount')[0].textContent = i /= 2
+            }
+            // end of update total price
+
+        </script>
+
+    </body>
+</html>

@@ -1,0 +1,317 @@
+/* shared css */
+body{
+    margin:0;
+    height:100%;
+    width:100%;}
+
+@font-face {
+    font-family:subheader;
+    src: url("font/Louis\ George\ Cafe\ Bold.ttf");
+}
+@font-face {
+    font-family: header;
+    src: url("font/LiberationSerif-Bold.ttf");
+}
+@font-face{
+    font-family: bodytext;
+    src: url("font/Louis\ George\ Cafe.ttf")
+}
+
+body {display: flex;
+    flex-direction: column;}
+
+.about{
+    text-decoration: underline;
+}
+
+/*flex for about page */
+main {display: flex;
+flex-direction: row;}
+
+.left {flex: 1;
+    background-color: #f9f8f3;
+}
+
+.right {flex: 2;}
+
+/*left flex styling*/
+#ourstory { font-family: subheader;
+    margin-left: 70px;
+    font-size:60px;
+    font-weight:bolder;
+    position: fixed;
+    top: 250px;
+    left: 30px;}
+
+#herbalessences { 
+    font-family: subheader;
+    margin-left: 70px;
+    position: fixed;
+    top: 278px;
+    left: 34px;}
+
+/* body */
+div p, h4 {font-family: bodytext;}
+
+h3 {font-family: subheader;
+    text-align: center;
+    font-size: xx-large;
+    }
+
+.p1 {margin: 120px;
+    margin-top: 40px;
+    font-size: 20px;
+    }
+
+.div1 {background-color: #a2a78e;}
+
+/*parallex scrolling pics */
+.banner {background: url(images/banner3.jpg) no-repeat fixed; 
+    background-position: 100% 0px !important; 
+    background-size: 67%; 
+    height: 400px;}
+
+.chemist {background: url(images/chem.jpg=ws720x480) no-repeat fixed; 
+    background-position: 100% 0px !important; 
+    background-size: 67%; 
+    height: 400px;}
+
+.chemistmobile {
+    background: url(images/chem.jpg=ws720x480) no-repeat fixed; 
+    display: none;
+    background-attachment: scroll;
+        width: 100%;
+        left: 0;
+        height: 300px;
+        background-size: 100%;
+        position: relative;
+        transform: translateY(50px); /*ask for opinion*/
+        opacity: 0;
+        transition: 2s all ease;}
+
+.renew {width: 100%;}
+
+.p2 {margin-left: 120px;
+    margin-right: 120px;
+    margin-bottom: 90px;
+    font-size: 20px;}
+
+/*flip card section */
+.cardimage {width: 700px;
+            margin-left: 140px;
+            backface-visibility: hidden;
+            }
+
+.AUcontent{
+    transition: transform 2s ease-in-out;
+    width: 700px;
+}
+
+.card {
+    transform-style: preserve-3d;}
+
+.AUcontent:hover .card{transform: rotateY(180deg);
+                transition: transform 2s;
+                }
+
+            
+/* text styling for packaging, sourcing and manufacturing sections */
+.packagingtext {
+                position: absolute;
+                top: 0;
+                left: -280px;
+                transform: rotateY(180deg);
+                font-size: 20px;
+                margin: 10px 200px 50px 200px; 
+                backface-visibility: hidden;
+                line-height: 1.5;
+                text-align: left;}
+
+.packagingtext2 {
+            position: absolute;
+            top: 0;
+            left: -280px;
+            transform: rotateY(180deg);
+            font-size: 20px;
+            margin: 10px 200px 20px 200px; 
+            backface-visibility: hidden;
+            line-height: 1.5;
+            text-align: left;}
+
+                
+/*background colour + font colour for packaging, sourcing and manufacturing sections */
+.background {
+                padding-bottom: 70px;
+                color: black;
+                }
+
+
+/*styling for packaging, sourcing and manufacturing headers*/
+.title {font-family: subheader;
+            color: #242e34;
+            text-align: center;
+            font-size: 31px;
+            margin-bottom: 20px;}
+
+
+/*styling for video header*/
+.title2 {font-family: subheader;
+            color: #242e34;
+            text-align: center;
+            font-size: 31px;
+            margin-bottom: 20px;
+            margin-top: 40px;}
+
+/* video styling */
+video {margin-left: 140px;
+        width: 700px; }
+
+#video {margin-top: 70px;
+        margin-bottom: 70px;}
+
+.p3 {margin: 40px 120px 70px 120px;
+    font-size: 20px;
+            }
+
+/* font styling of links */
+.link {color: #969c2c;
+        text-decoration: none;}
+.link:hover {text-decoration:underline ;}
+
+/*scrolling animation delay*/
+.reveal{
+    position: relative;
+    transform: translateY(50px); /*ask for opinion*/
+    opacity: 0;
+    transition: 2s all ease;}
+
+.reveal.active{
+    transform: translateY(0);
+    opacity: 1;}
+
+/*Mobile Phone Media Query */
+/*media query --> mobile */
+@media only screen and (max-width: 414px)
+{
+
+/*main flex config*/
+main {
+    background-color: #f9f8f3;
+    flex-direction: column;
+}
+
+/*header titles*/
+#herbalessences 
+{font-family: subheader;
+    position: absolute;
+    top: 338px;
+    left: 62px;
+    margin: 0;
+}
+#ourstory { font-family: subheader;
+    text-align: center;
+    font-size:60px;
+    font-weight:bolder;
+    position: absolute;
+    top: 355px;
+    left: 58px;
+    margin: 0;}
+
+/*removal of 1st parallex image*/
+.banner {background-attachment: scroll;
+        width: 100%;
+        left: 0;
+        height: 365px;
+        background-size: 100%;
+        }
+
+
+/*flip card section */
+.cardimage {width: 100%;
+    backface-visibility: hidden;
+    margin: 0px;
+    }
+
+.AUcontent{
+transition: transform 2s ease-in-out;
+width: 100%;
+}
+
+.card {
+transform-style: preserve-3d;}
+
+.content:hover .card{transform: rotateY(180deg);
+        transition: transform 2s;
+        }
+
+/* body */
+section p, h4 {font-family: bodytext;}
+
+h3 {font-family: subheader;
+    text-align: center;
+    font-size: xx-large;
+    }
+
+.p1 {margin: 15%;
+    margin-top: 10px;
+    font-size: 15px;
+    }
+
+.div1 {background-color: #a2a78e;}
+
+.renew {background: url(images/renew.jpg) no-repeat fixed;}
+
+.p2 {margin-left: 15%;
+    margin-right: 13%;
+    margin-bottom: 50px;
+    font-size: 15px;}
+
+.packagingtext {
+                position: absolute;
+                top:0;
+                left: 20px;
+                right: -20px;
+                transform: rotateY(180deg);
+                font-size: 15px;
+                margin:0px 50px 40px 10px; 
+                backface-visibility: hidden;
+                line-height: 1.5;
+                text-align: left;}
+        
+.packagingtext2 {
+                position: absolute;
+                top:0;
+                left: 20px;
+                right: -20px;
+                bottom: 0;
+                transform: rotateY(180deg);
+                font-size: 15px;
+                margin:0px 50px 20px 10px; 
+                backface-visibility: hidden;
+                line-height: 1.5;
+                text-align: left;}
+
+
+/*video section*/
+
+/*removal of 2st parallex image + animation delay*/
+main section.right section#video div.chemistmobile.reveal {display: block;}
+
+.chemist {display: none;}
+
+.title {font-family: subheader;
+    color: #242e34;
+    text-align: center;
+    font-size: 31px;
+    margin-bottom: 20px;
+    margin: 0px 5px 20px 5px}
+
+video {width: 100%;
+    margin-left: 0px;}
+
+#video {margin-top: 0px;
+    margin-bottom: 70px;}
+
+.p3 {margin: 30px 15% 40px 15%;
+    font-size: 15px;
+}}

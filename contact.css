@@ -1,0 +1,218 @@
+@import url(general.css);
+#menu{
+    display:none;
+}
+body{
+    overflow-x:hidden;
+    /*background-color: #f9f8f3;*/
+}
+
+#contact{
+    text-decoration: underline;
+}
+
+main{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin:20px 0;
+}
+#divisionL{ 
+    height:auto;
+    margin:50px 0px 50px 270px;
+    padding:10px 50px 10px 50px;
+    /*border: 1px solid black;*/
+    border-radius: 8px;
+    background-color:#f8f4e5;
+}
+
+#divisionR{
+    height:auto;
+    width:22%;
+    margin:0px 10px 10px 60px;
+    padding:0px 0px 10px 10px;
+    border-radius: 5px;
+}
+#divisionR p{
+    font-family:bodytext;
+}
+
+.contact{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.contact img{
+    margin-right:10px;
+    height:20px;
+}
+.noMargin {
+    margin:0 0 10px 0;
+}
+
+input[type="text"],input[type="email"]{
+    width:360px;
+    height: 25px;
+    font-family: bodyText;
+    border-radius: 3px;
+    border:0.5px solid #6d6c67;
+}
+
+input[type="submit"]{
+    width: 5rem;
+    padding:3px 0;
+    display:block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 30px;
+    border-radius:3px;
+    border:1px solid black;
+}
+input[type="submit"]:hover{
+    background-color: #ffffff;
+    border-radius: 3px;
+}
+input, textarea{
+    margin: 10px;
+}
+textarea{
+    height: 90px;
+    width:360px;
+    font-family: bodyText;
+    border:0.5px solid #6d6c67;
+    border-radius: 3px;
+}
+h1{
+    display:block;
+    text-align: center;
+    font-family:'Playfair Display', serif;
+    font-style:oblique;
+}
+h3{
+    font-family: subheader;
+}
+#leaf{
+    height:355px;
+    position: absolute;
+    top:280px;
+    left:-110px;
+    z-index:-1;
+    transform:rotate(2deg);
+    opacity:80%;
+}
+
+#flower{
+    height:260px;
+    position: absolute;
+    top:65px;
+    right:-90px;
+    z-index:-1;
+    /*animation: rotation 12s infinite linear;*/
+    opacity:80%;
+}
+/*#flower2{
+    height:250px;
+    position: absolute;
+    transform:rotate(-35deg);
+    top:510px;
+    right:-100px;
+    
+}*/
+#leaf2{
+    height:255px;
+    position: absolute;
+    transform:rotate(-35deg);
+    top:480px;
+    right:-60px;
+    opacity:80%;
+}
+#line{
+    display:none;
+    position:absolute;
+}
+@keyframes rotation {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(359deg);
+    }
+  }
+
+@media only screen and (max-width:414px){
+    #flower{
+        display:none;
+    }
+    #leaf{
+        display:none;
+    }
+    #leaf2{
+        display: none;
+    }
+    #divisionL{
+        height:auto;
+        margin: auto 0;
+        border: none;
+        padding:0px;
+        background-color: transparent;
+        
+    }
+    #divisionR{
+        height:auto;
+        width:auto;
+        border-radius: 5px;
+        display:flex;
+        flex-direction: column;
+        text-align: center;
+        margin:20px 20px 20px 20px;
+    }
+    h3{
+        font-family: subheader;
+        text-align:center;
+    }
+    main{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width:auto;
+    }
+    input[type="text"],input[type="email"]{
+        width:300px;
+        height: 25px;
+    }
+    
+    input[type="submit"]{
+        width: auto;
+        display:block;
+        padding: 0 10px;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 20px;
+    }
+    textarea{
+        height: 90px;
+        width:300px;
+        
+    }
+    .contact{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        margin:0 auto;
+    }
+    .noMargin {
+        margin:0;
+        width:100%;
+    }
+    .copyrightMargin{
+        margin-bottom:30px;
+        margin-top:10px;
+    }
+    #line{
+        display:block;
+        position:relative;
+        width:85%;
+    }
+    
+    
+}

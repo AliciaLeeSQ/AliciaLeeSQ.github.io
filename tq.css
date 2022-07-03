@@ -1,0 +1,74 @@
+@font-face {
+    font-family:subheader;
+    src: url("font/Louis\ George\ Cafe\ Bold.ttf");
+}
+@font-face {
+    font-family: header;
+    src: url("font/LiberationSerif-Bold.ttf");
+}
+@font-face{
+    font-family: bodytext;
+    src: url("font/Louis\ George\ Cafe.ttf")
+}
+
+*{
+	margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+.th{
+	text-align: center;
+	padding-bottom: 200px;
+	}
+	
+.ar{
+	border: 1px solid rgb(83, 164, 83);
+	border-radius: 100%;
+	width: 80px;
+	margin: auto;
+	background: rgb(83, 164, 83);
+}
+
+.ar p{
+	font-size: 60px;
+	color: white;
+}
+
+.th h1{
+	padding-top: 10px;
+	padding-bottom: 25px;
+	font-family: subheader;
+	letter-spacing: 5px;
+}
+
+.dc{
+	width: 400px;
+	margin: auto;
+}
+
+.dc p{
+	font-family: bodytext;
+}
+
+.backbtn{
+	display: inline-block;
+	background: #a3b16e;
+	padding: 15px 30px;
+	margin-top: 30px;
+	border-radius: 30px;
+	font-family: subheader;
+	color: white;
+	font-size: 20px;
+	text-decoration: none;
+}
+
+.dc a:hover{
+	background-color: darkolivegreen;
+
+}
+	
+
+
+

@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Contact Page</title>
+        <meta name="description" content="Herbal essences contact page">
+        <meta name="keyword" content="herbal essences, contact, address, email, phone number, shampoo, inquiry, comments">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="contact.css">
+        <link rel="stylesheet" href="general.css">
+        <link rel="icon" href="images/he_logo_R3R_1.ico" type="image/x-icon"> 
+        
+        
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Nunito&family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;0,800;1,400;1,500;1,600&family=Roboto&display=swap" rel="stylesheet">
+      
+    </head>
+    <body>
+     
+        <nav>
+          <div class="wrapper">
+            <!--logo-->
+            <div class="logo"><a href="index.html"><img src="images/HElogo.png" alt="logo image"></a></div>
+           
+            <input type="radio" name="slider" id="menu-btn">
+            <input type="radio" name="slider" id="close-btn">
+
+            <ul class="nav-links">
+              <li><label for="close-btn" class="btn close-btn"><i class="fas fa-times"></i></label></li>
+
+              <!--home-->
+              <li><a href="index.html">Home</a></li>
+              <!--product-->
+              <li>
+                <a href="product.html" class="desktop-item">Product</a>
+
+                <input type="checkbox" id="showMega">
+
+                <label for="showMega" class="mobile-item"><a href="product.html" id="productButton">Product</a></label>
+
+                <div class="mega-box">
+                  
+                  <div class="content">
+
+                    <div class="row">
+                      <header>Collection</header>
+                      <ul class="mega-links">
+                        <li><a href="#">Aloeeee</a></li>
+                        <li><a href="#">Argan Oil</a></li>
+                        <li><a href="#">Coconut Milk</a></li>
+                        <li><a href="#">Honey & Vitamin B</a></li>
+                      </ul>
+                    </div>
+
+                    <div class="row">
+                      <header>Hair Type</header>
+                      <ul class="mega-links">
+                        <li><a href="#">Dry, Damaged Hair</a></li>
+                        <li><a href="#">Fine, Flat Hair</a></li>
+                        <li><a href="#">Colored Hair</a></li>
+                        <li><a href="#">Curly Hair</a></li>
+                      </ul>
+                    </div>
+
+                    <div class="row">
+                      <header>Hair Needs</header>
+                      <ul class="mega-links">
+                        <li><a href="product.html">Repair</a></li>
+                        <li><a href="#">Volume</a></li>
+                        <li><a href="#">Moisturize</a></li>
+                        <li><a href="#">Smooth</a></li>
+                      </ul>
+                    </div>
+
+                    <div class="row">
+                      <header>Product Type</header>
+                      <ul class="mega-links">
+                        <li><a href="#">Shampoo</a></li>
+                        <li><a href="#">Hair Oil</a></li>
+                        <li><a href="#">Conditioner</a></li>
+                        <li><a href="#">Dry Shampoo</a></li>
+                      </ul>
+                    </div>
+                    
+                    <div class="row">
+                      <img src="images/megapic.png" alt="">
+                    </div>
+                  </div>
+                </div>
+              </li>
+
+               <!--About-->
+              <li><a href="aboutUs.html">About</a></li>
+              <!--Contact-->
+              <li id="contact"><a href="contact.html">Contact</a></li>
+            </ul>
+
+            <label for="menu-btn" class="btn menu-btn"><i class="fas fa-bars"></i></label>
+          </div>
+        </nav>
+
+        <main>
+            
+            <div id="divisionL">
+            <h1>Send us an Email</h1>
+            <form name="myForm" onsubmit="return validateForm()">
+                <input type="text" placeholder="First name" name="fname"><br>
+                <span id="fnamePrompt"></span><br>
+                <input type="text" placeholder="Last name" name="lname"><br>
+                <span id="lnamePrompt"></span><br>
+                <input type="text" placeholder="Email" name="email"><br>
+                <span id="email"></span><br>
+                <textarea placeholder="Comments" name="comments"></textarea><br>
+                <span id="comments"></span><br>
+                <input type="file" multiple><br>
+                <input type="submit" value="Send">
+            </form>
+            </div>
+            <hr id="line">
+            <div id="divisionR">
+                <div class="contact">
+                    <img src="images/addressicon.png" alt="address icon image">
+                    <h3>Office Address</h3>
+                </div>
+                <p class="copyrightMargin">The Procter & Gamble Company One Procter & Gamble Plaza Cincinnati, Ohio 45202 United States</p>
+                <div class="contact">
+                    <img src="images/phoneicon.webp" alt="phone icon image">
+                    <h3>Contact Number</h3>
+                </div>
+                <p class="noMargin">(855) 236-3327</p><br>
+            </div>
+            <img id="leaf" src="images/leafR.png" alt="leaf image">
+            <img id="flower" src="images/flower.png" alt="flower image">
+            <img id="leaf2" src="images/leaf3.png" alt="leaf image">
+            <script>
+                /*function ValidateEmail(){
+                    var mail = document.forms["myForm"]["email"].value;
+                    var mailformat = /^([\w-\.]+@([\w-]+\.)+[\w-]{2,4})?$/;
+                    if(mail.match(mailformat)&& mail!==""){
+                        document.getElementById("email").style.color="green";
+                        document.getElementById("email").style.fontFamily="arial";
+                        document.getElementById("email").style.fontSize="small";
+                        document.getElementById("email").style.paddingLeft="10px";
+                        document.getElementById("email").innerHTML="Valid Email";
+                        return true;
+                    }
+                    else{
+                        document.getElementById("email").style.color="red";
+                        document.getElementById("email").style.fontFamily="arial";
+                        document.getElementById("email").style.fontSize="small";
+                        document.getElementById("email").style.paddingLeft="10px";
+                        document.getElementById("email").innerHTML="Invalid Email";
+                        return false;
+                    }
+                }*/
+                function ValidateEmail(){
+                    var mail = document.forms["myForm"]["email"].value;
+                    var mailformat = /^([\w-\.]+@([\w-]+\.)+[\w-]{2,4})?$/;
+                    if(mail.match(mailformat)){
+                        return true;
+                    }
+                    else{
+                        return false;
+                    }
+                }
+                
+                function validateForm(){
+                    let fn=document.forms["myForm"]["fname"].value;
+                    var ln=document.forms["myForm"]["lname"].value;
+                    var em=document.forms["myForm"]["email"].value;
+                    var com=document.forms["myForm"]["comments"].value;
+
+                    if (fn==""){
+                        document.getElementById("fnamePrompt").style.color="red";
+                        document.getElementById("fnamePrompt").style.fontFamily="arial";
+                        document.getElementById("fnamePrompt").style.fontSize="small";
+                        document.getElementById("fnamePrompt").style.paddingLeft="10px";
+                        document.getElementById("fnamePrompt").innerHTML="This field is required";
+                        return false;
+                    }
+                    else if(ln==""){
+                        document.getElementById("lnamePrompt").style.color="red";
+                        document.getElementById("lnamePrompt").style.fontFamily="arial";
+                        document.getElementById("lnamePrompt").style.fontSize="small";
+                        document.getElementById("lnamePrompt").style.paddingLeft="10px";
+                        document.getElementById("lnamePrompt").innerHTML="This field is required";
+                        return false;
+                    }
+                    else if(em==""){
+                        document.getElementById("email").style.color="red";
+                        document.getElementById("email").style.fontFamily="arial";
+                        document.getElementById("email").style.fontSize="small";
+                        document.getElementById("email").style.paddingLeft="10px";
+                        document.getElementById("email").innerHTML="This field is required";
+                        return false;
+                    }
+                    else if(ValidateEmail()===false){
+                        document.getElementById("email").style.color="red";
+                        document.getElementById("email").style.fontFamily="arial";
+                        document.getElementById("email").style.fontSize="small";
+                        document.getElementById("email").style.paddingLeft="10px";
+                        document.getElementById("email").innerHTML="Invalid Email";
+                        return false;
+                    }
+                    else if(com==""){
+                        document.getElementById("comments").style.color="red";
+                        document.getElementById("comments").style.fontFamily="arial";
+                        document.getElementById("comments").style.fontSize="small";
+                        document.getElementById("comments").style.paddingLeft="10px";
+                        document.getElementById("comments").innerHTML="This field is required";
+                        return false;
+                    }
+                    else{
+                        alert("Email sent successfully!");
+                        return true;
+                    }
+                }
+                
+            
+        </script> 
+        </main>
+
+        <footer>
+            <p id="copyright">Copyright &copy; Procter & Gamble</p>
+            <a href="https://termsandconditions.pg.com/en-us/" id="tNc"><p >Terms and Condition</p></a>
+            <div id="socialMedia">
+                <p id="sm">Social Media</p>
+                <div id="icons">
+                    <a href="https://www.instagram.com/herbalessences/"><img src="images/instaicon.png" alt="intstagram icon"></a>
+                    <a href="https://twitter.com/herbalessences"><img src="images/twittericon.png" alt="twitter icon"></a>
+                    <a href="https://www.facebook.com/herbalessences"><img src="images/fbicon.png" alt="facebook icon"></a>  
+                </div>   
+            </div> 
+        
+        </footer>
+    </body>
+</html>

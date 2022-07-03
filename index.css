@@ -1,0 +1,458 @@
+@font-face {
+    font-family:subheader;
+    src: url("font/Louis\ George\ Cafe\ Bold.ttf");
+}
+@font-face {
+    font-family: header;
+    src: url("font/LiberationSerif-Bold.ttf");
+}
+@font-face{
+    font-family: bodytext;
+    src: url("font/Louis\ George\ Cafe.ttf")
+}
+
+body{
+  overflow-x: hidden;
+}
+
+h2{
+  font-family: header;
+  font-size: 2.5em;
+  font-style: italic;
+  font-weight:100;
+}
+
+.center{
+text-align:center;
+}
+
+/*id for headline*/
+#heading{
+  display: flex;
+  flex-direction: row;
+  background-color: white;  
+}
+
+#heading p{
+  flex:7;
+  font-size:20px;
+  box-sizing: content-box;
+  padding: 30px 30px 0px 20px;
+  width: 200px;
+  line-height: 2em;
+  font-family: subheader;
+  margin: 0;
+}
+
+#heading  p span{
+  font-size: 30px;
+  font-weight:1000;
+}
+
+#heading img{
+  float: right;
+  height: 480px;
+  width: 60%;
+
+}
+
+/*id for brief description of product*/
+#desc{
+  background-color: #f3f3f3;
+  overflow: auto;
+  background-image: url(images/OrgResize.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 18cm;
+}
+
+#desc h2{
+  padding-bottom: 35px;
+  text-align:center;
+}
+
+#descStyle{
+  background-color: rgba(255, 255, 255, 0.5);
+  margin: 0;
+  padding-bottom: 0px;
+  height: 15cm;
+}
+
+#desc img{
+  height: 9cm;
+  width: 14cm;
+  float: left;
+  margin-left: 70px ;
+}
+
+
+#desc p{
+  line-height: 40px;
+  margin-left: 50px;
+  padding-left: 60px;
+  overflow: auto;
+  font-family: bodytext;
+  font-size: 1.5em;
+  width: 40%;
+}
+
+#brand{
+
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+  
+#brand img{
+  height: 150px;
+  width: 210px;
+}
+
+#brandback{
+  background-size: cover;
+  height: 300px;
+  box-sizing: content-box;
+  padding: 50px 50px;
+}
+
+#cert{
+  background-image: url(images/forest2.jpg);
+  background-repeat:no-repeat;
+  background-size: 1550px 700px;
+  padding: 40px 100px 230px 100px;
+  overflow: auto;
+  margin-bottom: 0;
+}
+
+#cert h2{
+  text-align: center; 
+  background: rgba(245, 245, 220, 0.5);
+  padding: 45px 0px ;
+}
+
+#cert div{
+  position: absolute;
+  right: 50px;
+  padding: 20px 50px 60px 50px;
+  text-align: justify;
+  height: 330px;
+  width: 52%;
+  background: rgba(245, 245, 220, 0.5);
+  font-family: bodytext;
+  font-size: 1.3em;
+}
+
+#cert span{
+  font-style: italic; 
+  font-size: 1.5em;
+}
+
+#cert span:nth-child(2){
+  font-weight:bolder; font-size:2em;
+}
+
+#boldfont{font-weight:700 ;}
+
+#cert img{
+  float: left;
+  height: 50%;
+  position:relative;
+  left: -60px;
+}
+
+#cert p{overflow: auto;}
+
+.product{
+  column-count: 2;
+  align-items: center;
+}
+
+.product figure{
+  padding: 0px 150px;
+  clear: both;
+}
+
+#product1{height:300px; width:230px ;padding-bottom:0px;position: relative; left: -45px;}
+#product2{height:300px; width:230px;position: relative; left: -45px; }
+#product3{ height:250px ; width:230px;position: relative; left: -45px; }
+#product4{height:250px; width:230px;padding-top: 15px;;position: relative; left: -45px; }
+
+figcaption{ 
+  font-size: 1.5em;
+  text-align: center;
+  width: 330px;
+  position: relative; left: -80px;
+}
+
+#demo{
+  background-image: url(images/product/gray-background.jpg);
+  width: 90%;
+}
+
+#decoImg1{
+  float: right; 
+  position: absolute; 
+  right: -20%;
+  width: 280px;
+  height: 400px;
+}
+
+#decoImg2{
+  float: left; 
+  position: absolute; 
+  top: 4cm; 
+  left: -5cm;
+}
+
+/* Slideshow container */
+.mySlides {display: none}
+
+.slideshow-container {
+        width: 100%;
+        position: relative;
+        margin: auto;
+
+}
+
+/* Next & previous buttons */
+.prev , .next {
+        cursor: pointer;
+        position: absolute;
+        top: 50%;
+        width: auto;
+        padding: 16px;
+        margin-top: -22px;
+        color:black;
+        font-weight: bold;
+        font-size: 23px;
+        transition: 0.6s ease;
+        border-radius: 0 3px 3px 0;
+        user-select: none;
+        box-sizing:border-box;
+}
+
+/* Position the "next button" to the right */
+.next {
+      right: 0;
+      border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+      background-color: rgba(245, 245,245, 0.8);
+}
+
+
+/* The dots/bullets/indicators */
+.dot {
+      cursor: pointer;
+      height: 15px;
+      width: 15px;
+      margin: 0 2px;
+      background-color: #bbb;
+      border-radius: 50%;
+      display: inline-block;
+      transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+animation-name: fade;
+animation-duration: 1.5s;
+}
+
+@keyframes fade {
+from {opacity: .4} 
+to {opacity: 1}
+}
+
+@media only screen and (max-width:414px){
+
+    #heading{
+        display: block;
+    }
+
+    #heading p{
+        font-size:13px;
+        box-sizing: content-box;
+        padding:0;
+        margin:5px 5px;
+        width: 98%;
+        line-height: 2em;
+        font-family: subheader;
+    }
+    
+    #heading  p span{
+        font-size:2em;
+        font-weight: 900;
+    }
+
+    #heading img{
+        width: 100%;
+        margin-bottom: 0;
+        height: 100%;
+    }
+
+    #desc{
+        margin-bottom: 30px;
+        background-color: #f3f3f3;
+        padding: 15px 30px 40px 30px;
+        background-image: url(images/OrgResize.jpg);
+        background-repeat: no-repeat;
+        background-size:auto;
+        overflow-y: hidden;
+        height: fit-content;
+    }
+    
+    #desc h2{
+        text-align:center;
+        font-size: large;
+        font-style: normal;
+        padding:15px 10px 10px 15px
+    }
+    
+    #desc img{
+        height: 5cm;
+        width:100%;
+        margin-left:0px;
+    }
+    #decoImg1{
+      display:none;
+  }
+    
+    #desc p{
+        height:fit-content;
+        width:fit-content;
+        line-height: 25px;
+        margin-left: 0px;
+        padding:10px 20px;
+        font-family: bodytext;
+        font-size: 0.9em;
+    }
+
+    /*from here*/
+    .product{
+        column-count: 1;
+    }
+    
+    .product figure{
+        padding: 0px 50px;
+        margin-left: 100px;
+        
+    }
+    
+    figcaption{ 
+        font-size:medium;
+        text-align:center;
+        height: fit-content;
+        width: 250px;
+        left: -100px;
+    }
+    
+    #demo{
+        background-image: url(images/product/gray-background.jpg);
+        width: 80%;
+    }
+
+    #demo h2{font-size: 2em;}
+
+    #demo > img:first-of-type{visibility: hidden;}
+    #demo >img:nth-of-type(2){visibility: hidden;}
+
+    .slideshow-container{
+        height: 14cm;
+        width: 80%;
+    }
+
+    #product1{height:150px; width:100px; padding-left: 20px; margin-top: 0;}
+    #product2{height:150px; width:130px;}
+    #product3{height:150px; width:130px;}
+    #product4{height:130px; width:120px;}
+
+/*until here*/
+    #cert{
+        background-image: url(images/forest2.jpg);
+        background-repeat:no-repeat;
+        background-size:cover;
+        padding: 30px 100px 300px 150px;
+        margin-bottom: 0;
+        height: fit-content;
+    }
+    
+    #cert h2{
+        padding: 20px 10px;
+        font-size: large;
+        text-align: center; 
+        background: rgba(245, 245, 220, 0.5);
+        position: relative;
+        left: -100px;
+    }
+    
+    #cert div{
+        position: absolute;
+        left: 10px;
+        right: 0px;
+        padding: 15px 30px 0px 30px;
+        text-align:left;
+        height:fit-content;
+        width: 80%;
+        background: rgba(245, 245, 220, 0.5);
+        font-family: bodytext;
+        font-size: 0.8em;
+    }
+    
+    #cert img{
+        height: 10%;
+        position: absolute;
+        top: 1725px;
+        left: 250px;
+    }
+
+    #brand{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+    }
+    
+    #brand img{
+        height: 2cm;
+        width: 100px;
+    }
+
+    #brandback{
+        background-color: white;
+        background-size: cover;
+        height: 300px;
+        box-sizing: content-box;
+        padding: 20px 50px;
+    }
+
+    #brandback h2{
+        font-size: 1.2em;
+    }
+    
+      /*footer
+        footer{
+            display: flex;
+            flex-direction: column;
+            height:100%;
+        }
+        footer img{
+            padding: 35px 55px 20px 55px;
+        }
+        #copyright{
+            order:3;
+            margin: 30px 0px 30px 0px;
+        }
+        #tNc{
+            order:2
+        }
+        #sm{
+            display:none;
+        }*/
+
+}

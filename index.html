@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Herbal Essences</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="index.css">
+        <link rel="stylesheet" href="general.css">
+        <link rel="icon" href="images/he_logo_R3R_1.ico" type="image/x-icon"> 
+
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Nunito&family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;0,800;1,400;1,500;1,600&family=Roboto&display=swap" rel="stylesheet">
+      
+    </head>
+    <body>
+      <nav>
+        <div class="wrapper">
+          <!--logo-->
+          <div class="logo"><a href="index.html"><img src="images/HElogo.png" alt="logo image"></a></div>
+         
+          <input type="radio" name="slider" id="menu-btn">
+          <input type="radio" name="slider" id="close-btn">
+
+          <ul class="nav-links">
+            <li><label for="close-btn" class="btn close-btn"><i class="fas fa-times"></i></label></li>
+
+            <!--home-->
+            <li class="home"><a href="index.html">Home</a></li>
+            <!--product-->
+            <li>
+              <a href="product.html" class="desktop-item">Product</a>
+
+              <input type="checkbox" id="showMega">
+
+              <label for="showMega" class="mobile-item"><a href="product.html" id="productButton">Product</a></label>
+
+              <div class="mega-box">
+                
+                <div class="content">
+
+                  <div class="row">
+                    <header>Collection</header>
+                    <ul class="mega-links">
+                      <li><a href="#">Aloeeee</a></li>
+                      <li><a href="#">Argan Oil</a></li>
+                      <li><a href="#">Coconut Milk</a></li>
+                      <li><a href="#">Honey & Vitamin B</a></li>
+                    </ul>
+                  </div>
+
+                  <div class="row">
+                    <header>Hair Type</header>
+                    <ul class="mega-links">
+                      <li><a href="#">Dry, Damaged Hair</a></li>
+                      <li><a href="#">Fine, Flat Hair</a></li>
+                      <li><a href="#">Colored Hair</a></li>
+                      <li><a href="#">Curly Hair</a></li>
+                    </ul>
+                  </div>
+
+                  <div class="row">
+                    <header>Hair Needs</header>
+                    <ul class="mega-links">
+                      <li><a href="product.html">Repair</a></li>
+                      <li><a href="#">Volume</a></li>
+                      <li><a href="#">Moisturize</a></li>
+                      <li><a href="#">Smooth</a></li>
+                    </ul>
+                  </div>
+
+                  <div class="row">
+                    <header>Product Type</header>
+                    <ul class="mega-links">
+                      <li><a href="#">Shampoo</a></li>
+                      <li><a href="#">Hair Oil</a></li>
+                      <li><a href="#">Conditioner</a></li>
+                      <li><a href="#">Dry Shampoo</a></li>
+                    </ul>
+                  </div>
+                  
+                  <div class="row">
+                    <img src="images/megapic.png" alt="">
+                  </div>
+                </div>
+              </div>
+            </li>
+
+             <!--About-->
+            <li><a href="aboutUs.html">About</a></li>
+            <!--Contact-->
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+
+          <label for="menu-btn" class="btn menu-btn"><i class="fas fa-bars"></i></label>
+        </div>
+      </nav>
+        <main>
+
+            <div id="heading">
+                <p> <span>Plant power in your
+                    shower</span> <br><br>Our Herbal Essences bio:renew shampoos and conditioners contain real botanicals, identified and endorsed 
+                    by the Royal Botanic Gardens, Kew, one the world's leading authorities on plants. Discover our haircare collections 
+                    designed to relieve any common hair concerns and uncap an experience unlike any other.</p>
+                <img  src="images/rose.jpg" alt="flower">
+            </div>
+
+            <div id="desc">
+                <div id="descStyle">
+                    <h2>Dedicated to creating quality shampoos and conditioners</h2>
+    
+                    <img src="images/Shampoo.webp" alt="organics" >
+                <p>Herbal Essences believes in the power of nature and plants. That's why we source real,
+                 legitimate, came-from-a-plant botanicals in every bottle of our Herbal Essences bio:renew shampoos and conditioners.
+                 The identification of these botanicals is checked by the
+                 experts at the Royal Botanic Gardens, Kew, a world-leading authority on plants with 260 years of expertise. 
+                 From enchanting smells to real botanicals, experience the positive power of Herbal Essences in every shower.</p>     
+                </div>
+               
+            </div>  
+
+        <div class="slideshow-container" id="demo">
+            <h2 class="center">Bestsellers</h2><br><br>
+            <img id="decoImg1" src="images/leafR.png" alt="leaf">
+            <img id="decoImg2" src="images/daisy.png" alt="daisy">
+          <!-- The slideshow-->
+
+            <div class="product mySlides fade" >
+                <figure>
+                  <a href="product.html"><img src="images/product/p1.5_S" alt="product1"  id="product1"></a>
+                    <figcaption>Argan Oil Shampoo</figcaption>
+                </figure>
+    
+    
+                <figure>
+                  <a href="product.html"><img src="images/product/p2.png" alt="product2" id="product2"></a>
+                    <figcaption>Repairing Hair Mask with Argan Oil & Aloe</figcaption>
+                    
+                </figure>
+            </div>
+
+            <div class="product mySlides fade">
+                <figure>
+                    <a href="product.html"><img src="images/product/p3.webp" alt="product3" id="product3"></a>
+                    <figcaption>Coconut Milk Shampoo</figcaption>
+                </figure>
+                <figure>
+                  <a href="product.html"><img src="images/product/p4.png" alt="product3"  id="product4"> </a>
+                    <figcaption>Argan Oil & Aloe Sulfate Free Detangling Cream</figcaption>
+                        
+                </figure>
+            </div>
+
+            <a class="prev" onclick="plusSlides(-1)" >❮</a>
+            <a class="next" onclick="plusSlides(1)">❯</a>
+
+        </div>
+        <br>
+        <div class="center">
+            <span class="dot" onclick="currentSlide(1)"></span> 
+            <span class="dot" onclick="currentSlide(2)"></span> 
+          </div>
+
+          <div id="cert">
+            <h2>Brand certification </h2><br>
+            <img src="partner.webp" alt="Brand Partner" >
+            <div>
+                <p><span>Shampoos and conditioners, with botanicals endorsed by experts at the </span> <span>Royal Botanic Gardens, Kew</span></p>
+                <p id="boldfont">Rooted in plant science and powered by nature, our botanicals are 
+                identified by real scientists at the Royal Botanic Gardens, Kew – a world-leading expert on plants and fungi for 260 years.</p>
+                <p>Together, we are unlocking the secrets of nature and keeping things real. 
+                Read more about how Herbal Essences and the Royal Botanic Gardens, Kew are fusing science with haircare to provide botanical shampoos and conditioners for you.</p>
+            </div>
+        </div>
+        
+        <div id="brandback">
+        <h2 class="center">Partners who do good for the planet and your products</h2><br><br>
+        <div id="brand"><img class="logo" src="images/BrandLogo1.png" alt="Cruelty free">
+        <img class="logo" src="images/BrandLogo2.png" alt="Tera Free"></div>
+        
+        </div>
+        </main>
+
+        <footer>
+          <p id="copyright">Copyright &copy; Procter & Gamble</p>
+          <a href="https://termsandconditions.pg.com/en-us/" id="tNc"><p >Terms and Condition</p></a>
+          <div id="socialMedia">
+              <p id="sm">Social Media</p>
+              <div id="icons">
+                  <a href="https://www.instagram.com/herbalessences/"><img src="images/instaicon.png" alt="intstagram icon"></a>
+                  <a href="https://twitter.com/herbalessences"><img src="images/twittericon.png" alt="twitter icon"></a>
+                  <a href="https://www.facebook.com/herbalessences"><img src="images/fbicon.png" alt="facebook icon"></a>  
+              </div>   
+          </div> 
+      
+      </footer>
+
+        <script src="slideshow.js" async defer></script>
+    </body>
+</html>
